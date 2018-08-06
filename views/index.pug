@@ -1,0 +1,14 @@
+doctype html
+html
+    head
+        title= title
+        link(rel='stylesheet', href='/stylesheets/style.css')
+    body
+        for people in peoples
+            div.card
+                img(src="/avatars/" + people.avatar)
+                div.container
+                    h3= people.name
+                    p=  people.phone_number
+                    p.state=  people.state
+        input(type='button', onclick='javascript: window.location = "/"' value='Вернуться к форме').return
