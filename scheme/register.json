@@ -1,0 +1,28 @@
+{
+  "type": "object",
+  "properties": {
+    "name":{
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string",
+      "pattern":  "^[0-9]{11,11}$"
+    },
+    "email": {
+      "type": "string",
+      "pattern": "^.+@.+\\..+$"
+    },
+    "login": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9_-]{3,16}"
+    },
+    "password": {
+      "type": "string"
+    }
+  },
+  "required": ["name","lastName","phone","email","login","password"]
+}
+
